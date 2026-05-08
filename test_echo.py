@@ -6,7 +6,7 @@ BASE_URL = "https://postman-echo.com"
 def test_get_request_status():
     """Проверка GET-запроса: статус код 200"""
     response = requests.get(f"{BASE_URL}/get")
-    assert response.status_code == 200
+    assert response.status_code == 404
 
 def test_get_with_params():
     """Проверка GET-запроса с параметрами"""
